@@ -59,6 +59,12 @@
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
     }
+
+    table,
+    th,
+    td {
+      border: 1px solid;
+    }
   </style>
   <link href="css/cover.css" rel="stylesheet">
 </head>
@@ -67,8 +73,68 @@
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <main class="px-3">
       <h1>Level 3 - Amp & Volume Knob</h1>
-      <h3>Step 1</h3>
       <p>Want the best of both worlds? Add in a transitor amp AND volume control.</p>
+      <h3>Step 1</h3>
+      <p>Get yourself the following components:</p>
+      <p>
+      <table style="margin-right:auto;margin-left:auto;">
+        <tr>
+          <td><b>Quantity</b></td>
+          <td><b>Type</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>50K Potentiometer</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>8.2K Resistor</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>10nF Capacitor</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2N3904 Transistor</td>
+        </tr>
+      </table>
+      </p>
+      <h3>Step 2</h3>
+      <p>Look at the schematic.</p>
+      <p><a href="activity_level3_img/level3_schematic.png" target="_blank">Make it larger in a new
+          tab</a></p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_schematic.png" /></p>
+      <h3>Step 3</h3>
+      <p>Unplug your antenna and headphones. Pull your battery out.</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step3.jpg" /></p>
+      <h3>Step 4</h3>
+      <p>Plan your component layout, especially the potentiometer. You can totally do this if you want:</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step4a.jpg" /></p>
+      <p>But it looks a bit like an udder hanging off your badge. Maybe instead you'd like to drill and do a panel
+        mount:</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step4b.jpg" /></p>
+      <p>Much cooler, and you get to use a power tool in the process.</p>
+      <p>The next thing you're going to do is to break any litle metal tabs off the front of the potentiometer. These
+        tabs are meant for panel mounting, but in our design we don't have a place for them. This is a hack. Grab a pair
+        of needle nose pliers and break them off. If you don't, the potentiometer will not sit flush on the PCB.</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step4c.jpg" /></p>
+      <p>Figure out where you can put the thing. You want to leave some space for the other components. You also want to
+        avoid contact with other components or covering up the solder pads you'll be working with.</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step4d.jpg" /></p>
+      <p>Flip the potentiometer over and mark around the shaft. The marked circle will be where you drill.</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step4e.jpg" /></p>
+      <p>Finally, drill the hole that the potentiometer will go through. You will need a drill bit that is a slightly
+        larger diameter than the shaft of the potentiometer.</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step4f.jpg" /></p>
+      <h3>Step 5</h3>
+      <p>Get an X-acto knife and cut through the middle of the J-TR solder jumper. There's a small trace connecting the
+        two pads. It's a bit difficult to cut and you may need to apply some pressure while cutting. Be mindful of your
+        fingers.</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step5a.jpg" /></p>
+      <p>Also cut the J-S solder jumper. It helps to rotate the board when doing this one.</p>
+      <p><img class="img-fluid" src="activity_level3_img/level3_step5b.jpg" /></p>
+      <p>Grab a multimeter and set it for continuity (Ohms)... The little greek Omega symbol. Put a probe on each side of the J-S solder pad.</p>
     </main>
   </div>
 </body>

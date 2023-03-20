@@ -59,6 +59,12 @@
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
     }
+
+    table,
+    th,
+    td {
+      border: 1px solid;
+    }
   </style>
   <link href="css/cover.css" rel="stylesheet">
 </head>
@@ -89,9 +95,10 @@
         Based on the TA7642 AM Radio IC<br />
         Hackable design (see the Activities page)<br />
         Has a small transistor amp, which makes it suitable for listening on headphones<br />
+        Mono audio sent to both headphone channels<br/>
         <!--
         Did you know that Spotify has 489 million monthly active listeners?
-        I'm pretty sure our Kernelcon AM transmitters would burst into flames if we put that much load on them.
+        I'm pretty sure our Kernelcon AM transmitters would burst into flames if we tried to broadcast to that many listeners.
       -->
       </p>
       <h3>RF Gain Knob</h3>
@@ -101,16 +108,66 @@
         blasts the entire Omaha metro area with its radio waves.</p>
       <p>The RF Gain knob is actually a bit of a hack in itself. By turning down the power to the RF tuner you can, in
         some cases, achieve better selectivity across the tuner dial. Without this hack, you simply receive 1110 KFAB
-        across the whole tuner dial. &lt;sarcasm&gt;I know, I know. Who doesn't love listening to the AM radio equivalent of Fox News?&lt;/sarcasm&gt;
+        across the whole tuner dial. &lt;sarcasm&gt;I know, I know. Who doesn't love listening to the AM radio
+        equivalent of Fox News?&lt;/sarcasm&gt;
         Has no one put sarcasm tags into the HTML spec yet?
       </p>
+      <h3>Hacker Playground</h3>
+      <p>
+        We wanted to provide a place to have some hardware fun on the badge. Behold! The Hacker Playground.
+      </p>
+      <p><img class="img-fluid" src="hacker_playground.jpg" /></p>
+      <p>Here's what those cryptic letters mean:</p>
+      <p>
+      <table style="margin-left:auto;margin-right:auto;">
+        <tr>
+          <td>VCC / 1.5V</td>
+          <td style="text-align:left;">These pins carry 1.5 volts</td>
+        </tr>
+        <tr>
+          <td>GND</td>
+          <td style="text-align:left;">These are ground pins</td>
+        </tr>
+        <tr>
+          <td>O</td>
+          <td style="text-align:left;">Audio output from the radio IC <b>pre-amplifier</b></td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td style="text-align:left;">Audio output from the radio IC <b>post-amplifier</b> and connects to the S pins
+            on the headphone jack (unless you cut J-S).</td>
+        </tr>
+        <tr>
+          <td>TR</td>
+          <td style="text-align:left;">1.5V and connects to the TR pins on the headphone jack (unlses you cut J-TR)</td>
+        </tr>
+        <tr>
+          <td>J-S (not pictured)</td>
+          <td style="text-align:left;">Solder jumper that severs the S pin of the headphone jack from the circuit when
+            cut</td>
+        </tr>
+        <tr>
+          <td>J-TR (not pictured)</td>
+          <td style="text-align:left;">Solder jumper that severs the TR pins of the headphone jack from the circuit when
+            cut</td>
+        </tr>
+      </table>
+      </p>
+      <p>All unlabeled pins are yours to use. The are not connected to each other unless you connect them with wire or solder.</p>
       <h3>Schematic</h3>
       <p>Yes. It's a bit hard to read on this page. <a href="badge_schematic.png" target="_blank">Open it in a new
           tab</a> or <a href="badge_schematic.pdf" target="_blank">get a PDF</a>.</p>
-      <img class="img-fluid" src="badge_schematic.png" />
+      <p><img class="img-fluid" src="badge_schematic.png" /></p>
       <h3>Super Secret Stuff</h3>
       <p>You've read this far, probably hoping to find some clues on "what's hidden in the badge" or something similar.
         I'm going to let you in on a secret...</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
